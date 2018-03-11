@@ -1,11 +1,14 @@
-body {
-	font-family: "Francois One", "Trebuchet MS", "Lucida Grande", sans-serif;
+html {
+    background: #fee;
 }
 
+body {
+	font-family: "Francois One", "Trebuchet MS", "Lucida Grande", sans-serif;
+	margin: auto;
+}
 
 /*Header*/
 .header {
-	background-color: #fee;
 	display: flex;
 	width: 100%;
 }
@@ -32,10 +35,8 @@ body {
 	margin: 0;
 }
 
-
 /*Content*/
 .container {
-	background-color: #fee;
 	width: 100%;
 }
 
@@ -43,7 +44,7 @@ body {
 	min-height: 300px;
 	width: 100%;
 	height: auto;
-	background-image: url("https://s20.postimg.org/9roabd9jx/pexels-photo-51055.jpg");
+	background-image: url("../img/pexels-500-315.jpeg");
 	background-size: cover;
 }
 
@@ -51,7 +52,6 @@ body {
 	padding: 20px ;
 	font-size: 16px;
 	color: #c00;
-	display: inline-block;
 }
 
 .projects {
@@ -73,7 +73,6 @@ body {
 	width: 100%;
 	font-size: 16px;
 	color: #888;
-	display: inline-block;
 }
 
 .project-1,
@@ -83,14 +82,11 @@ body {
 	margin: 1px;
 }
 
-
 /*Footer*/
 .license {
 	font-size: 16px;
 	color: #888;
-	background-color: #fee;
 }
-
 
 /*Responsive: "Mostly Fluid" and "Layout Shifter"*/
 @media screen and (min-width: 450px) {
@@ -143,6 +139,10 @@ body {
 	.header-text {
 		font-size: 1.25em;
 	}
+	.hero-image {
+		background-image: url("../img/pexels-640-403.jpeg");
+		min-height: 350px;
+	}
 	.projects-intro {
 		font-size: 1.70em;
 	}
@@ -165,5 +165,18 @@ body {
 @media screen and (min-width: 750px) {
 	.project-info {
 		font-size: 1.15em;
+	}
+	.hero-image {
+		background-image: url("../img/pexels-1280-622.jpeg");
+		min-height: 450px;
+	}
+	.hero-text {
+		font-size: 1.15em;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	body {
+		width: 75%;
 	}
 }
